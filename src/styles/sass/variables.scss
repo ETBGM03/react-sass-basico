@@ -1,0 +1,16 @@
+//app fonts
+$Poppins: 'Poppins', sans-serif;
+
+
+//color
+$dark: '#000';
+$light: '#fff';
+$primary: '#00bcd4';
+
+@mixin breakpoint($breakpoint: 'xs') {
+  @if ($breakpoint == 'md') {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}
